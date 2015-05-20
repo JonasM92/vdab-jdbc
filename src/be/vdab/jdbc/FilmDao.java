@@ -1,11 +1,13 @@
 package be.vdab.jdbc;
 
+import java.util.List;
+
 /**
  * Represents a strategy for managing Films in an underlying store.
  */
 public interface FilmDao {
     /**
-     * Retrieves a Film by its primary key.
+     * Retrieves a MyFilmDao by its primary key.
      * @param id The unique id of the film to retrieve.
      * @return The film associated with the specified id, or null if no such film exists.
      */
@@ -31,4 +33,5 @@ public interface FilmDao {
      * @return true in case of success.
      */
     boolean deleteFilm(int id);
+
 }
